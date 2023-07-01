@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Frydie Goldstein</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header">
+            <a href="index.html" id="name">Frydie Goldstein</a>
+            <nav id="navigatore">
+                <ul>
+                    <li><a href="projects.html">projects</a></li>
+                    <li><a href="resume.html">resume</a></li>
+                    <li id="contactLink"><a href="#contact">get in touch</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="sectionBody">
+            <section aria-label="picture of Frydie" id="picture">
+                <img src ="resources\WebsitePic.png" />
+            </section>
+            <section aria-label="about" id="about">
+                <h1>Frydie Goldstein</h1>
+                <p id="title">Driven Full Stack Engineer harnessing passion to proficiently create engaging experiences from the ground, up and beyond.</p>
+                <h2>Who am I?</h2>
+                <p id="aboutContent">As a Full Stack Engineer with a passion for problem-solving, my journey from accounting to tech showcases my adaptability, drive for growth, and innate curiosity. I've navigated significant life changes with open-mindedness and determination, learning invaluable skills along the way. With a talent for quickly grasping new concepts and a team-first mindset, I'm ever-ready to tackle the dynamic challenges of coding. My unique background and strong principles make me a resilient contributor to any team.</p>
+                <button class="contact-button">
+                    <a href="#contact">Get in touch</a>
+                </button>
+            </section>
+        </section>
+
+        <footer id="contact">
+            <div id="contactDetails">
+                <h2>Get in Touch</h2>
+                <p>Seeking a Full Stack Engineer role, but open to wider opportunities in coding and development. <br> I can be reached through the form <b>here -> </b> <br> via email at <b>frydiegoldstein@gmail.com</b> <br> or by phone at <b>0526609370</b>.</p>
+                <h4>Looking forward to hearing from you.</h4>
+            </div>
+            <form method="post" id="contactForm">
+                <input class="fillLine" type="text" id="name_" placeholder="Your Name">
+                <span id="nameError" class="error-message"></span>
+                <input class="fillLine" type="tel" id="number" placeholder="Your phone number">
+                <span id="numberError" class="error-message"></span>
+                <input class="fillLine" type="text" id="email" placeholder="Your E-mail">
+                <span id="emailError" class="error-message"></span>
+                <textarea id="message" placeholder="Your message"></textarea>
+                <span id="messageError" class="error-message"></span>
+                <button type="submit" id="submitBtn">Submit</button>
+                <span id="sentMessage" class="error-message"></span>
+            </form>
+        </footer>
+        <script src="javaScript\script.js"></script>
+    </body>
+</html>
